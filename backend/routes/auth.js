@@ -59,7 +59,7 @@ router.post('/login', async (req, res) => {
     // Генеруємо токен
     const token = jwt.sign(
       { id: user._id },
-      JWT_SECRET,  // Використовуємо ключ тут
+      JWT_SECRET,  // Використовуємо ключ 
       { expiresIn: '1h' }
     );
 
